@@ -1,0 +1,78 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Machine Translation form French to English}
+\author{Sunday Okechukwu & Dhruv Jain }
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+    \begin{itemize}
+        \item Machine Translation is the process of translating a source language to a target language using computers. Despite significant advances in Machine Translation over the past few years, the quality of translation still remains a challenge. The primary goal of this project is to improve the quality of Machine Translation using Neural Network Architecture. ~\cite{schwenk2007smooth}~\cite{rishita2019machine}
+    \end{itemize}
+
+    \begin{itemize}
+        \item French to English translation in NLP (Natural Language Processing) refers to the process of automatically translating text language using machine learning algorithms and statistical models. This task falls under the category of machine translation, which is a sub field of NLP that focuses on the development of algorithms that can translate text from one language to another. The process typically involves training a machine learning model on a large corpus of parallel French-English texts, which allows the model to learn patterns and relationships between words and phrases in both languages. Once the model is trained, it can be used to translate new French text into English text automatically.
+        ~\cite{NIPS2014_a14ac55a}
+    \end{itemize}
+    
+\section{Motivation}
+
+\subsection{Problem Tackling}
+    \begin{itemize}
+        \item What kind of pipeline to use to get the best outcome for translating.Moreover, can we get data for free or we need to use some  API's. We are motivated to tackle all this issues using different resources like research papers, kaggle for data acquiring and more.
+    \end{itemize}
+    
+    \begin{itemize}
+        \item Machine translation can significantly reduce the time and cost required for translating documents, websites, and other materials. This is especially true for large volumes of content that would be difficult or impossible for humans to translate within a reasonable timeframe. It is a rapidly evolving field, with new developments and advancements happening all the time. There is still much to be learned and discovered in this area, making it an exciting and intellectually stimulating field of study and research.
+    \end{itemize}
+
+
+\subsection{ Application or Theoretical Study}
+\begin{itemize}
+    \item This an application that interest us and will try to apply learning algorithms so it's an \textbf{Applied project.}~\cite{brown1988statistical}
+\end{itemize}
+
+ \subsection{Why this problem? }
+ 
+\begin{itemize}
+    \item The most important part of the text translation process is accuracy. The goal of translation is to convey the original meaning of the French text to English language. Therefore, it is crucial that the translated text accurately represents the meaning of the original text. A translator must have an in-depth understanding of the source and target languages, cultural nuances, and subject matter to produce an accurate translation. 
+\end{itemize}
+
+ \begin{itemize}
+     \item must be able to communicate effectively with clients or other stakeholders to ensure that the translation meets their expectations and requirements. Effective communication can help prevent misunderstandings and ensure that the final product meets the needs of the intended audience.
+ \end{itemize}
+
+\section{Methods}
+\begin{enumerate}
+    \item Data Collection: A corpus of parallel English French sentences will be collected for training and testing purposes.
+    \item Pre-processing: The collected data will be pre-processed by removing irrelevant information such as numbers and punctuations and converting the text to lower case. The pre-processed text will be tokenized into sentences and words.
+    \item Model Development: A Neural Network-based Machine Translation model will be developed using Deep Learning techniques such as Convolutional Neural Networks (CNN), Long Short-Term Memory (LSTM) ~\cite{yao2018improved} ~\cite{rahit2020machine}, Recurrent Neural Networks (RNN) maybe Encoder decoder . The model will be trained on the pre-processed parallel corpus using Backpropagation algorithm.
+    \item Model Evaluation: The developed model will be evaluated using standard evaluation metrics such as BLEU and METEOR. The performance of the model will be compared with existing Machine Translation models such as statistical machine translation and rule-based machine translation.~\cite{zou2013bilingual}~\cite{rathod2014machine}
+\end{enumerate}
+
+
+\section{Intended experiments}
+\begin{itemize}
+    \item We are planning to do evolution matrix such as:  Metric for Evaluation of Translation with Explicit Ordering (METEOR), BLEU (Bilingual Evaluation Understudy) this are widely used metric for evaluating machine translation systems. We will also use F1-score, accuracy Precision and recall. ~\cite{liu2020auto}
+\end{itemize}
+
+
+\bibliographystyle{plain}
+\bibliography{nlp_praposal}
+
+\end{document}
