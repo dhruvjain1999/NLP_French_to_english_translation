@@ -46,8 +46,6 @@ The goal of this project is to build a deep neural network for Neural Machine Tr
 - Decoder predicts target sequence based on the context vector.
 
 ### Evaluations and Results
-- Train Set Results: [Results](train_results)
-- Test Set Results: [Results](test_results)
 - BLEU-4 Score: 0.849
 
 ### Summary and Future Works
